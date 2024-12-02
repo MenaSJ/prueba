@@ -86,5 +86,5 @@ El servidor estará disponible en [http://localhost:8000](http://localhost:8000)
 proyecto-dashboard/
 ├── frontend/           # Código del frontend en Angular
 ├── backend/            # Código del backend en Node.js
-    └── php-server/         # Código del servidor PHP para generar PDFs
+    └── reporte/         # Código del servidor PHP para generar PDFs
 ```
