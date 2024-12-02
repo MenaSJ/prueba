@@ -55,7 +55,7 @@ Si el backend está en un servidor distinto, actualiza la URL base de los archiv
 ### 1. Iniciar el backend
 ```bash
 cd backend
-npm start
+npm run dev
 ```
 El backend estará disponible en [http://localhost:3000](http://localhost:3000).
 
