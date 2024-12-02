@@ -34,7 +34,7 @@ npm install
 ## Configuración
 
 ### 1. Configurar variables de entorno (backend)
-Crea un archivo `.env` en el directorio `backend` con el siguiente contenido:
+Crea un archivo `.env` en el directorio `backend` con el siguiente contenido y llena las variables faltantes con tus propios valores:
 ```env
 DB_HOST=localhost
 DB_PORT=5432
