@@ -1,0 +1,14 @@
+<div *ngIf="!loading; else loadingTemplate">
+    <h1>Bienvenido, {{ user?.nombre }}</h1>
+    <p>Correo: {{ user?.correo }}</p>
+    <p>Fecha de Creacion: {{ user?.createdAt | date:'short' }}</p>
+    <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+  
+    <button (click)="downloadReport()">Descargar Reporte</button>
+    <button (click)="logout()">Cerrar Sesion</button>
+  </div>
+  
+  <ng-template #loadingTemplate>
+    <p>Cargando datos del usuario...</p>
+  </ng-template>
+  

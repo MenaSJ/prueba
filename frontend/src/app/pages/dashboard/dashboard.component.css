@@ -1,0 +1,63 @@
+div {
+  font-family: 'Arial', sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 600px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 10px 0;
+}
+.error-message {
+  color: #e74c3c;
+  font-weight: bold;
+  background-color: #ffe5e5;
+  padding: 10px;
+  border: 1px solid #e74c3c;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 10px;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #2980b9;
+}
+button:active {
+  background-color: #1f5f87;
+}
+button:nth-of-type(2) {
+  background-color: #e74c3c;
+}
+button:nth-of-type(2):hover {
+  background-color: #c0392b;
+}
+button:nth-of-type(2):active {
+  background-color: #962d21;
+}
+
+/* Plantilla de carga */
+ng-template p {
+  font-size: 1.2rem;
+  color: #888;
+  font-style: italic;
+}

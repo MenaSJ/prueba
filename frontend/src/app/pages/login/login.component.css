@@ -1,0 +1,46 @@
+.login-form {
+  background-color: #fff;
+  padding: 5rem;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.login-form h2 {
+  font-size: 22px;
+  color: #2980b9;
+  margin-bottom: 20px;
+}
+.login-form .form-group {
+  margin-bottom: 15px;
+}
+.login-form label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.login-form .error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.login-form button {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login-form button:disabled {
+  background-color: #ccc;
+}
+  
