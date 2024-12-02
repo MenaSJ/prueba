@@ -30,7 +30,6 @@ const handleGeneratePDF = async (req, res) => {
         const requestData = {
             nombre,
             correo: usuarioCorreo,
-            estado,
             fechaCreacion,
         };
         
