@@ -16,8 +16,6 @@ const handleGeneratePDF = async (req, res) => {
             attributes: ['nombre', 'correo', 'estado', 'createdAt'], 
         });
 
-        console.log('Usuario encontrado:', usuario);
-
         // Si el usuario no se encuentra
         if (!usuario) {
             return res.status(404).json({ error: 'Usuario no encontrado.' });
@@ -35,9 +33,7 @@ const handleGeneratePDF = async (req, res) => {
             estado,
             fechaCreacion,
         };
-
-        console.log('Datos enviados al servicio PHP:', requestData); // Verifica los datos enviados
-
+        
         // Hacer la solicitud POST al servicio PHP para generar el pdf
         const response = await axios.post('http://localhost:8000/reporte.php', requestData, {
             responseType: 'arraybuffer', // Asegura que la respuesta sea tratada como un buffer binario (PDF)
