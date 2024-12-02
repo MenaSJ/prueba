@@ -13,7 +13,7 @@ const handleGeneratePDF = async (req, res) => {
         // buscar el usuario por correo
         const usuario = await Usuario.findOne({
             where: { correo }, // Buscar por correo
-            attributes: ['nombre', 'correo', 'estado', 'createdAt'], 
+            attributes: ['nombre', 'correo', 'createdAt'], 
         });
 
         // Si el usuario no se encuentra
@@ -22,7 +22,7 @@ const handleGeneratePDF = async (req, res) => {
         }
 
         // preparar los datos a enviar al servicio PHP
-        const { nombre, correo: usuarioCorreo, estado, createdAt } = usuario;
+        const { nombre, correo: usuarioCorreo, createdAt } = usuario;
 
         // convertir la fecha a un formato adecuado
         const fechaCreacion = new Date(createdAt).toLocaleDateString('es-ES');
