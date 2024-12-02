@@ -45,7 +45,9 @@ sequelize
     .then(() => {
         console.log('Conexion a PostgreSQL exitosa');
         // Sincroniza las tablas; usa force: true solo para desarrollo
-        return sequelize.sync({ force: true }); // esto creara la tabla de usuarios
+        // esto creara la tabla de usuarios. Una vez creada, comentar esta linea de -
+        // codigo, de lo contrario se limpiaran todos los datos
+        return sequelize.sync({ force: true }); 
     })
     .then(() => {
         console.log('Tablas sincronizadas correctamente.');
