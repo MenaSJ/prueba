@@ -47,7 +47,7 @@ sequelize
         // Sincroniza las tablas; usa force: true solo para desarrollo
         // esto creara la tabla de usuarios. Una vez creada, comentar esta linea de -
         // codigo, de lo contrario se limpiaran todos los datos
-        //return sequelize.sync({ force: true }); 
+        return sequelize.sync({ force: true }); 
     })
     .then(() => {
         console.log('Tablas sincronizadas correctamente.');
